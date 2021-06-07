@@ -1,0 +1,44 @@
+1. IS 해서 내가 할 파일 정보보기
+
+2. git add < IS 한 파일 정보의 이름.txt >
+
+3. git status < 파일의 상태 보기 >
+
+4. git commit -m " 메세지 " < 파일에 대한 메세지 입력 >
+
+5. git log < 파일 정보 보기, < git add 한 파일에 대한 메세지도 확인 >
+
+6. git remote -v < 연결 상태 확인 >
+
+7. git push <origin(변동가능)> master < 깃에 밀어 넣는다 >
+
+
+
+======
+
+
+hello.txt 수정 후
+
+git stauts -> 빨간 색 표기
+
+git commit -am < add + massege >
+
+git log --oneline 로그보기 
+
+git push origin master < 오리진에 올린다 >
+
+====
+
+git checkout < 아이디 >
+
+git log --oneline 현제 정보 
+
+git log --oneline --all 전체정보
+
+
+
+
+
+7bb20b0 (HEAD -> master) bye.txt 1차 수정
+c252c8b (origin/master, origin/HEAD) hello.txt 수정함
+26995dd 첫번째 버전 생성 - hello.txt추가함
