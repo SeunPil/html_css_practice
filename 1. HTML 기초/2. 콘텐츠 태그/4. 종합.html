@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: white;
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        header h1 {
+            flex: 1;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* margin- */
+        }
+
+        header nav {
+            flex: 1;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin-top: 30px;
+            margin-left: 300px;
+        }
+
+        /* 게시판 로그인 방명록 쪽 ul li */
+        header nav ul li {
+            margin-right: 30px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: gray;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: red;
+            background: yellow;
+        }
+
+        section {
+            border: 2px solid lightgray;
+            margin-top: 40px;
+            padding: 60px;
+            overflow: hidden;
+        }
+
+        section h2 {
+            color: red;
+            font-size: 30px;
+            border-bottom: 2px dashed red;
+            text-align: center;
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        section article {
+            border: 2px solid blue;
+            height: 300px;
+            width: 30%;
+            float: left;
+            margin-top: 30px;
+            margin-right: 2.5%;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        aside {
+            width: 150px;
+            height: 800px;
+            background: yellowgreen;
+            position: absolute;
+            right: 5%;
+            top: 10%;
+            /* position absolute = 위치는 절대값으로 움직인다.  */
+
+        }
+
+        footer {
+            border-top: 2px solid gray;
+            margin-top: 60px;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #a1a1a1;
+            font-size: 22px;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>로고</h1>
+        <nav>
+            <ul>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">방명록</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>게시물 목록</h2>
+        <article>
+            <h3>게시물 제목1</h3>
+            <p>내용 A</p>
+        </article>
+        <article>
+            <h3>게시물 제목2</h3>
+            <p>내용 B</p>
+        </article>
+        <article>
+            <h3>게시물 제목3</h3>
+            <p>내용 C</p>
+        </article>
+    </section>
+
+    <aside>SIDE BANNER</aside>
+
+    <footer>
+        <address>
+            <a href="">이메일 전송</a>
+            <a href="">전화 걸기</a>
+
+        </address>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 사이트는 위에서 부터 천천히 읽어온다. -->
+    <!-- script src가 div id보다 위에 있으면 스크립트가 먼저 읽혀서 작동이 안된다. -->
+    <!-- defer: 랜더링 대기 / 먼저 읽히지 말고 기다려라. -->
+    <!-- defer은 스크립트가 먼저 읽힐 때 넣는다. -->
+
+    <div id="my-pet">귀여운 거북이</div>
+    <button id="change">변경</button>
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
