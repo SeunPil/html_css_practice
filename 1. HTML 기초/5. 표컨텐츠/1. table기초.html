@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        th {
+            background: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 칸의 개수를 새고 tr*개수를 먼저 해준다. -->
+    <!-- tr = 행 tr열고 td는 열 th 테이블 헤더 -->
+    <!-- colspan = 옆칸, rowspan = 아래칸 -->
+    <table>
+
+        <tr>
+
+            <th colspan="3">인적사항</th>
+        </tr>
+
+        <th>이름</th>
+        <th>나이</th>
+        <th>비고</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>30세</td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr>
+            <td>박영희</td>
+            <td>31세</td>
+        </tr>
+        <tr>
+            <td>고길동</td>
+            <td>42세</td>
+
+        </tr>
+
+
+    </table>
+
+</body>
+
+</html>

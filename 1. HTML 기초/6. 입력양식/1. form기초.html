@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!-- type=passward는 자동 필터링 처리가 된다. -->
+<!-- action = 서버 어디에 제출 할 지 주소를 적어준다. -->
+<!-- GET=주소창에 비밀번호 오픈, POST= 오픈 X -->
+<!-- type=email은 로그인 아이디가 이메일 형식이여야 된다. -->
+<!-- novalidate 자동 검증 -->
+    <form action="/login" method="POST" autocomplete="off" novalidate>
+        <input type="email" name="id" placeholder="아이디를 입력하세요.">
+        <input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
+        
+        <button type="submit">로그인</button>
+    </form>
+
+</body>

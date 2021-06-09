@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#">
+        <!-- br 줄바꿈 -->
+        # 아이디: <input type="text"> <br>
+        # 비밀번호: <input type="password"> <br>
+        # 이메일: <input type="email" value="abc@naver.com"> <br>
+
+        # 취미
+        <input type="checkbox"> 음악감상 
+        <input type="checkbox"> 게임 
+        <input type="checkbox"> 영화보기 <br>
+
+        #이메일 수신 여부:
+        <!-- 다중 체크 방지 name="#-verify" -->
+        <!-- checked 자동체크 -->
+        <!-- disable 체크 못함 -->
+        <input type="radio" name="email-verify" checked> 예
+        <input type="radio" name="email-verify" disabled> 아니오 <br>
+
+        #SMS 수신 여부:
+        <input type="radio" name="SMS-verify" checked> 예 
+        <input type="radio" name="SMS-verify"> 아니오 <br>
+
+        <!-- 파일 첨부 -->
+        <input type="file"> <br>
+
+        <!-- 게이지 바 생성 -->
+        <!-- max"5" step="1" 이면 키보드 5번에 max 도달 -->
+        <!-- value = 기본값 -->
+        <input type="range" min="0" max="10" step="1" value="2"> <br>
+
+        # 주문 수량:
+        <input type="number" value="1">
+        <!-- hidden 서버에 숨겨서 전송 가능 -->
+        <input type="hidden" value="ABC"> <br>
+
+        <button id="cm" type="button">그냥버튼</button>
+        <button type="submit">전송버튼</button>
+        <button type="reset">초기화버튼</button> <br>
+
+
+    </form>    
+
+        <script>
+            cm.onclick = e => {
+                alert('하이');
+            };
+        </script>
+</body>
+
+</html>
