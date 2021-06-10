@@ -9,12 +9,12 @@
 
 
     <style>
-        #list>li:nth-child(odd) {
+        #list>li:nth-child(even) {
             background: gray;
         }
 
-        #list>li:nth-child(even) {
-            background: yellow;
+        #list>li:nth-child(odd) {
+            background: rgb(200, 200, 17);
         }
         #list>li:first-child{
             color: red;
@@ -35,7 +35,14 @@
 
     </style>
 
+<!-- #list > li:nth-child(-n+2 ) {
+    border: 2px dotted aqua; }
+-n+2는 0넣으면2 1넣으면 1이라 첫번째 두번째 줄 테두리 변경 가능 -->
 
+<!-- #list > li:nth-child(n+3) {
+    border: 2px dashed violet; }
+0부터 넣으면 3번째 줄 부터 보라색 테두리 가능 -->
+<!-- 이 두 방식은 li에 class 추가를 안해도 된다. -->
 
 </head>
 
