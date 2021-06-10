@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    /* 형 중에 누군가가 class orange를 보유하고 있어야 함 */
+    .orange ~ li{
+        color:orangered;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <ul>
+        <li>사과</li>
+        <li>딸기</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>포도</li>
+    </ul>
+
+</body>
+
+</html>

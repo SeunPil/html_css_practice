@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div 띄고 .orange !! */
+        /* 후손 선택자를 했을 시 태그가 추가되도 변동 X */
+        div .orange {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>안녕안녕</h1>
+
+    <!-- emmet 문법 -->
+    <!-- div>ul>li*3 -->
+    <div>
+        <h1>메롱메롱</h1>
+        <ul>
+            <li id="apple">사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <!-- div+p+span -->
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+
+</body>
+
+</html>

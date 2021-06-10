@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 단점: 이 html페이지 안에서만 적용  -->
+    <!-- 내부 스타일 시트 적용 -->
+    <style>
+        h1,
+        div {
+            font-style: italic;
+        }
+    </style>
+
+    <!-- 외부 스타일 시트 적용 -->
+    <!-- ./ 상대경로 ( 내 위치에서 찾는 것 ) -->
+    <!-- 다른 html 파일에 똑같이 적용 가능 -->
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <h1>개구쟁이 뽀로로</h1>
+    <div>Hello</div>
+    <!-- 인라인 스타일 시트 -->
+    <Span style="color: blue; background: aqua; font-size: 24px;">HELLO</Span>
+    <p style="display: block;">안녕히 계세요</p>
+
+</body>
+
+</html>

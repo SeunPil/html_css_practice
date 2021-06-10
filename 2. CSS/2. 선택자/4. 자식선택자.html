@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class = orange이지만 조건은 ul의 자식이여야한다. ( > 자식) */
+        /* 결국 마지막 선택자가 스타일링이 되고 앞에는 조건이다. */
+        ul > .orange {
+            color: orange;
+        }
+        /* div의 자식인 hi */
+        div > h1 {
+            color: brown;
+            font-size: 13px;
+        }
+        /* div의 자식인 ul의 자식인 li의 .orange class */
+        div > ul > li.ornage{
+            font-size: 15em;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>안녕안녕</h1>
+
+    <!-- emmet 문법 -->
+    <!-- div>ul>li*3 -->
+    <div>
+        <h1>메롱메롱</h1>
+        <ul>
+            <li id="apple">사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <!-- div+p+span -->
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+
+</body>
+
+</html>

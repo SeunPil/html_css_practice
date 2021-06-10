@@ -1,0 +1,9 @@
+
+/* main.css에서 side.css를 불러옴 */
+
+@import url(./side.css);
+
+h1, p{
+    color: red;
+    background: orange;
+}

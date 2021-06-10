@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 모든 태그 적용 (*) */
+        * {
+            color: red;
+        }
+        body {
+            font-size: 24px;
+        }
+        /* ul *은 ul의 아래 태그들 전체 적용 */
+        /* ul이 적용되는게 아니다. */
+        ul * {
+            background:  tomato;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- emmet 문법 -->
+    <!-- div>ul>li*3 -->
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+        </ul>
+        <!-- div+p+span -->
+        <div>당근</div>
+        <p>토마토</p>
+        <span>오렌지</span>
+    </div>
+
+</body>
+
+</html>
