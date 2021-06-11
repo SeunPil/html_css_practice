@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* !important는 1순위로 만들어준다. */
+
+        div {
+            color: red;
+        }
+
+        #c-yellow {
+            color: yellow;
+        }
+
+        .c-green {
+            color: green;
+        }
+
+        div {
+            color: blue;
+        }
+
+        /* 바디는 전체선택자 0점이라 important가 적용이 안된다. */
+        body {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="c-yellow" class="-cgreen" style="color: orange;">Hello!</div>
+    <div id="c-yellow" class="-cgreen">Hello!</div>
+    <div class="c-green">Hello!</div>
+    <div>Hello!</div>
+</body>
+
+</html>

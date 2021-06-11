@@ -9,3 +9,7 @@
 
 ## 글자 확대 축소 설정 방법
 - 파일 -> 기본설정 -> 바로가기 키 -> 글꼴 검색 -> 단축기 지정 ( Ctrl+ , Ctrl-)
+
+ ## Reset CSS 
+ - 복사 후 head 태그 아래에 붙혀넣기
+ `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">`
