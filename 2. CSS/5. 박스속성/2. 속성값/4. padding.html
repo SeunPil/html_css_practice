@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* padding은 내부에 공간이 생긴다. */
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            color: white;
+            font-size: 2em;
+            padding: 20px;
+            /* 패딩으로 안 쪽 여백은 주고 싶은데
+            박스 사이즈가 변하는 건 싫다 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">안녕하세요</div>
+
+</body>
+
+</html>
