@@ -11,18 +11,22 @@
             height: 350px;
             border: 2px dashed gray;
 
+/*
             background-color: orange;
             background-image: url(./sky.jpg);
             background-size: 200px;
             /* 백그라운드에 사진이 꽉 안찰시 사진을 반복해서 보여주기 X */
             /* repeat-x 가로 repeat-y 세로 */
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; */
             /* 앞이 x축 뒤가 y축 */
             /* center bottom 설정 시 아래쪽 가운데로 사진 이동. */
-            background-position: center;
+            /* background-position: center; */
             /* cover은 완벽한 풀사이즈는 X */
             /*  */
-            background-size: contain;
+            /* background-size: cover;  */
+            
+            /* 50px 30px / 200px 100px; = 50 30은 포지션 / 200 100은 크기 */
+            background: orange url("img/sky.jpg") no-repeat fixed center / cover;
         }
     </style>
 </head>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box {
+        width: 150px;
+        height: 100px;
+        background: orange;
+        color: white;
+        font-size: 50px;
+        margin: 10px;
+        text-align: center;
+        /* line-height값을 height와 맞추면 y축 중앙정렬 */
+        line-height: 100px;
+        /* 박스 수평배치 */
+        /* left: 왼쪽 기준 right: 스크롤 기준 */
+        float: left;
+    }
+    .box:nth-child(3n + 1){
+        /* 4번 박스부터는 수평정렬 그만 */
+        /* both 자동으로 clear 해줌 */
+        clear: both;
+    }
+</style>
+</head>
+<body>
+    
+<div class="box">1</div>
+<div class="box">2</div>
+<div class="box">3</div>
+<div class="box">4</div>
+<div class="box">5</div>
+<div class="box">6</div>
+<div class="box">7</div>
+<div class="box">8</div>
+<div class="box">9</div>
+<div class="box">10</div>
+<div class="box">11</div>
+<div class="box">12</div>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .#은 class일 때만 !!!!!!!!!! */
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+
+        .navi {
+            /* li태그 앞에 점 제거 */
+            /* 전체적인 큰 박스 */
+            list-style: none;
+            width: 700px;
+            margin: auto;
+            margin-top: 30px;
+
+
+        }
+
+        .navi li {
+            /* 카테고리 목록을 담을 박스 */
+            float: left;
+            height: 45px;
+            text-align: center;
+        }
+
+        .navi li a {
+            /* a태그 밑줄 제거 */
+            text-decoration: none;
+            /* 글자색 상속받기 */
+            /* 카테고리 목록 */
+            color: inherit;
+            margin: 25px;
+            font-size: 25px;
+        }
+
+        .navi li:hover {
+            /* hover = 마우스를 올렸을 때 */
+            border-bottom: 3px solid deeppink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="navi clearfix">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">BOARD</a></li>
+        <li><a href="#">LOGIN</a></li>
+    </ul>
+
+</body>
+
+</html>

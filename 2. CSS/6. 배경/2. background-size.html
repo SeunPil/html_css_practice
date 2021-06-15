@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 400x300 (박스의 크기ㅜ) */
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 100px;
+            /* 원본 사진 1:1비율 500x500 */
+            background-image: url('img/basic.jpg');
+            background-repeat: no-repeat;
+            /* 사진의 크기 조정 (가로, 세로) */
+            /* background-size: 200px 100px; */
+
+            /* 하나만 적으면 가로로 취급, 세로는 비율에 맞게 자동 조정 (원본기준) */
+            /* background-size: 300px; */
+            /* background-size: cover; */
+            /* background-position: 0 -50px; */
+
+            background-size: contain;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+</body>
+
+</html>
