@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 8000px;
+        }
+
+        header {
+            width: 100%;
+            border-bottom: 1px solid gray;
+            /* fixed = 스크롤을 내려도 헤더가 따라옴 */
+            position: fixed;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            margin-left: 20px;
+            margin-top: 15px;
+            color: skyblue;
+            float: left;
+        }
+
+        header ul {
+            list-style: none;
+            font-size: 1.5em;
+            font-weight: 700;
+            float: right;
+        }
+
+        header ul li {
+            float: left;
+            margin-right: 30px;
+        }
+
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class='clearfix'>
+        <h1>My Homepage</h1>
+        <ul>
+            <li>소개</li>
+            <li>커뮤니티</li>
+            <li>자료실</li>
+            <li>로그인</li>
+        </ul>
+    </header>
+
+</body>
+
+</html>

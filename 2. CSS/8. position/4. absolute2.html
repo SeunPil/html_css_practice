@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .root {
+        width: 400px;
+        height: 300px;
+        border: 4px dashed orange;
+        padding: 100px;
+        /* position을 .root에 걸어 줄 시
+        absolute를 걸고 움직이는 거의 기준점은 .root의 범위가 된다. */
+    }
+    .parent{
+        width: 400px;
+        height: 300px;
+        border: 4px dashed blue;
+        position: relative;
+    }
+    .child{
+        width: 120px;
+        height: 80px;
+        background: tomato;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    .abs{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    /* *** 중요 *** */
+    /* 박스 상하좌우 정중앙 배치 */
+    .center-box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+<body>
+    
+    <div class="root">
+        <div class="parent">
+            <div class="child center-box">1</div>
+            <div class="child abs">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+
+</body>
+</html>

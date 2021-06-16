@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        section {
+            background: pink;
+            border: 3px solid black;
+            width: 250px;
+            /* relative를 걸어줌으로 범위는 핑크 박스만 지정 */
+            position: relative;
+            padding: 15px;
+            /* margin은 스크린뷰 기준 큰 박스 이동 */
+            margin: 30px auto 0;
+        }
+
+        section h1 {
+            color: green;
+            font-size: 20px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .center-box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        section .more {
+            position: absolute;
+            left: 200px;
+            top: 13px;
+            padding: 5px;
+        }
+        section .content li {
+            margin-bottom: 5px;
+        }
+        section .content li a{
+            /* 밑줄 제거 */
+            text-decoration: none;
+            color: black;
+        }
+        section .content li a:hover{
+            color:#00f;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>동물병원 24시</h1>
+        <ul class="content">
+            <li><a href="#">밥 먹이는 시간 지킬 것</a></li>
+            <li><a href="#">길고양이 주사 맞히기</a></li>
+            <li><a href="#">눈 아픈 동물 목에 깔때기 씌우기</a></li>
+            <li><a href="#">매일 목욕 시킬 것</a></li>
+            <li><a href="#">이름없는 애들 이름 짓지 말기</a></li>
+        </ul>
+        <div class="more">
+            <a href="#">더보기</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
