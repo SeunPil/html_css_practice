@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        .box:hover {
+            /* animation-name: grow-up;
+            animation-duration: 3s;
+            /* 균일한 속도로 애니메이션 재생 */
+            /* animation-fill-mode: linear;
+            animation-delay: 1s; */
+            /* 애니메이션 반복 */
+            /* infinite = 무한 반복 */
+            /* animation-iteration-count: 2;
+            animation-direction: alternate; */
+
+            animation: grow-up 3s linear 1s infinite alternate;
+        }
+
+        @keyframes grow-up {
+            0% {
+                width: 100px;
+            }
+            50% {
+                width: 500px;
+            }
+            100% {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

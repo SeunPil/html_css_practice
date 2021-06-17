@@ -8,8 +8,9 @@
     <title>Document</title>
     <style>
         .container {
+            width: fit-content;
             display: flex;
-            margin: 50px 0 0 80px;
+            margin: 50px auto 0;
         }
 
         .container .box {
@@ -19,8 +20,21 @@
             border: 4px dashed red;
             border-radius: 10px;
             font-size: 30px;
+            line-height: 100px;
+            text-align: center;
             margin-right: -30px;
+
+            /* 그림자 효과 - box-shadow, text-shadow */
+            /* ex) box-shadow : 가로 그림자 길이, 세로 그림자 길이
+            블러 효과 크기, 색상 */
+            box-shadow: 5px 5px 15px black;
+        }
+        .container .box:hover{
+            background: yellowgreen;
+            border-color: yellow;
             position: relative;
+            bottom: 20px;
+            transition: 0.7s;
         }
 
         /* even 짝수 */
