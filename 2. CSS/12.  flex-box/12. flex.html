@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /* header, section, footer의 수평처리 flex */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container header {
+    background: tomato;
+    flex: 1;
+    padding: 1em;
+}
+
+.container section {
+    /* main, left, right의 수평 flex */
+    display:flex;
+}
+
+.container section article {
+    padding: 15em 1em;
+}
+.container section article.main {
+    background: gray;
+    /* flex-grow: 4;
+    flex-basis: 0; */
+    flex:4;
+    order: 0;
+}
+.container section article.left {
+    background: yellow;
+    flex:1;
+    order: -1;
+}
+.container section article.right {
+    background: green;
+    flex:1;
+    order: 1;
+}
+.container footer {
+    background: aqua;
+    flex: 1;
+    padding: 1em;
+}
+
+
+@media screen and (max-width:768px) {
+    .container {
+        /* 반응형이니 비율로 변경 768px의 100% */
+        width: 100%;
+    }
+    .container section {
+        flex-direction: column;
+    }
+
+    .container section article {
+        padding: 1em;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header>Header</header>
+        <section>
+            <article class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </article>
+            <article class="left">Aside 1</article>
+            <article class="right">Aside 2</article>
+        </section>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>
