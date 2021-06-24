@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            margin: 100px;
+            width: 600px;
+            display: grid;
+            border: 4px solid gray;
+
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 1fr);
+
+
+            /* 3행 3열 1칸당 넣고싶은 이름들 */
+            /* {.} = 공백 */
+            grid-template-areas:
+             "top top top" 
+             "main main side"
+             ". bottom bottom";
+
+
+            /* row-gap: 20px;  */
+            /* column-gap: 20px; */
+            gap: 20px 20px;
+            
+        }
+
+        .wrap> * {
+            border: 5px solid red;
+        }
+
+
+        /* 이름 지정 */
+        .wrap header {
+            grid-area: top;
+        }
+
+        .wrap section {
+            grid-area: main;
+        }
+
+        .wrap aside {
+            grid-area: side;
+        }
+
+    
+        .wrap footer {
+            grid-area: bottom;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header>Header</header>
+        <section class="main">Main</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+
+</html>
